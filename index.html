@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web for calculating the day of a week. Credits: Flaticon.com">
+    <meta name="author" content="mind972">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/8241/8241815.png">
+    <script src="script.js"></script>
+    <title>CalcWeekDay - mind972</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Calculate Week Day</h2>
+        <p>Please, enter the day, month and year to calculate the week day for that date.</p>
+        <select name="day" id="day-n">
+            <option value="0" selected> - Select Day - </option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+        </select>
+        <select name="month" id="month-sigla">
+            <option value="0" selected> - Select Month - </option>
+            <option value="JAN">JANUARY</option>
+            <option value="FEB">FEBRUARY</option>
+            <option value="MAR">MARCH</option>
+            <option value="APR">APRIL</option>
+            <option value="MAY">MAY</option>
+            <option value="JUN">JUNE</option>
+            <option value="JUL">JULY</option>
+            <option value="AUG">AUGUST</option>
+            <option value="SEP">SEPTEMBER</option>
+            <option value="OCT">OCTOBER</option>
+            <option value="NOV">NOVEMBER</option>
+            <option value="DEC">DECEMBER</option>
+        </select>
+        <input type="number" placeholder="- Enter a year -" id="year-n">
+        <button id="calc" onclick="CalculateWeekDay()">Calculate</button>
+        <div id="answer">
+            <label id="result">(Day)</label>
+        </div>
+    </div>
+</body>
+</html>
