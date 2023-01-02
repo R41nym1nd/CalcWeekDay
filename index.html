@@ -49,24 +49,25 @@
             <option value="31">31</option>
         </select>
         <select name="month" id="month-sigla">
-            <option value="0" selected> - Select Month - </option>
-            <option value="JAN">JANUARY</option>
-            <option value="FEB">FEBRUARY</option>
-            <option value="MAR">MARCH</option>
-            <option value="APR">APRIL</option>
-            <option value="MAY">MAY</option>
-            <option value="JUN">JUNE</option>
-            <option value="JUL">JULY</option>
-            <option value="AUG">AUGUST</option>
-            <option value="SEP">SEPTEMBER</option>
-            <option value="OCT">OCTOBER</option>
-            <option value="NOV">NOVEMBER</option>
-            <option value="DEC">DECEMBER</option>
+            <option value="null" selected> - Select Month - </option>
+            <option value="00">JANUARY</option>
+            <option value="01">FEBRUARY</option>
+            <option value="02">MARCH</option>
+            <option value="03">APRIL</option>
+            <option value="04">MAY</option>
+            <option value="05">JUNE</option>
+            <option value="06">JULY</option>
+            <option value="07">AUGUST</option>
+            <option value="08">SEPTEMBER</option>
+            <option value="09">OCTOBER</option>
+            <option value="10">NOVEMBER</option>
+            <option value="11">DECEMBER</option>
         </select>
         <input type="number" placeholder="- Enter a year -" id="year-n">
         <button id="calc" onclick="CalculateWeekDay()">Calculate</button>
         <div id="answer">
-            <label id="result">(Day)</label>
+            <label for="rta">The week day is: </label>
+            <label name="rta" id="result">(Day)</label>
         </div>
     </div>
 </body>
