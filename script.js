@@ -7,16 +7,22 @@ const days = {
     5: "Friday",
     6: "Saturday",
 };
-
-const CalculateWeekDay = () => {
+const GetDate = () => {
     let day = document.getElementById('day-n').value; // get day (number=1-31)
     let month = document.getElementById('month-sigla').value; // get month (number=00-11)
     let year = [document.getElementById('year-n').value]; // get year (object)
     year = year.toString(); // convert year to a processable value for the Date() function
-
+    
     let date = [year, month, day]; // assing the values to an array
+
+    return date;
+}
+const CalculateWeekDay = () => {
+    let date = GetDate();
 
     let weekDay = new Date(...date); // get the date with spread operator
 
-    return document.getElementById('result').innerHTML = days[weekDay.getDay()]; // calculate and obtain the week day
+    let day = document.getElementById('result').innerHTML = days[weekDay.getDay()]; // calculate and obtain the week day
+
+    return day;
 }
