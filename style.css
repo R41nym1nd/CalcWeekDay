@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* -- general -- */
+
+.credits {
+    padding: 7px 0 0 0;
+    margin: 3px 0 0 0;
+}
+.credits a {
+    color: #0429406b;
+    text-decoration: none;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.fondo {
+    background-color: #9FC131;
+    display: flex;
+    flex-direction: column;
+}
+
+/* -- calculator -- */
+
+.seccion-calculate {
+    background-color: #005C53;
+    padding: 40px 20px;
+    border: 3px solid #042940;
+    border-radius: 12px;
+    color: #D6D58E;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.25);
+}
+.seccion-titulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #DBF227;
+    margin: 2px 0 20px 0;
+}
+.enter-info {
+    padding: 30px;
+    font-size: 1.5rem;
+}
+.enter-input {
+    margin: 3px 5px 13px 5px;
+    padding: 2px 10px 2px 10px;
+}
+.enter-input select {
+    width: min(200px,100%);
+    background-color: #D6D58E;
+    border: none;
+    border-radius: 9px;
+    color: #042940;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+.enter-input input {
+    width: min(200px,100%);
+    background-color: #D6D58E;
+    border: none;
+    border-radius: 9px;
+    color: #042940;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+.enter-input input:focus::placeholder {
+    color: #0429406b;
+}
+.enter-input input:focus {
+    outline: none;
+}
+.enter-input input::placeholder {
+    color: #042940;
+}
+.enter-input input::-webkit-inner-spin-button,
+.enter-input input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.btn-calc {
+    color: #042940;
+    padding: 5px 9px;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 15px;
+    background-color: #DBF227;
+    transition: all 0.2s ease-in;
+}
+.btn-calc:hover {
+    cursor: pointer;
+    background-color: #9FC131;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+.answer {
+    margin: 10px 0 0 0;
+}
+.answer label:nth-child(2) {
+    padding: 0 10px 0 0;
+    font-weight: bold;
+}
+
+
+/* -- responsive -- */
+@media screen and (max-width:768px) {
+    .seccion-calculate {
+        max-width: 630px;
+    }    
+}
