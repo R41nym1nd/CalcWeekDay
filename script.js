@@ -1,3 +1,4 @@
+const btn = document.getElementById('calc');
 const days = {
     0: "Sunday",
     1: "Monday",
@@ -16,8 +17,8 @@ const GetDate = () => {
     let date = [year, month, day]; // assing the values to an array
 
     return date;
-}
-const CalculateWeekDay = () => {
+};
+btn.addEventListener('click', () => {
     let date = GetDate();
 
     let weekDay = new Date(...date); // get the date with spread operator
@@ -25,7 +26,7 @@ const CalculateWeekDay = () => {
     let day = document.getElementById('result').innerHTML = days[weekDay.getDay()]; // calculate and obtain the week day
 
     return day;
-}
+});
 document.addEventListener('keyup', function(event) {
     event.preventDefault();
     if (event.key === 'Enter') {
