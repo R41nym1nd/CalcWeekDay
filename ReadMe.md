@@ -1,0 +1,1 @@
+Web for calculating the day of a week with a given date.
